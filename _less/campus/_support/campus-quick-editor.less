@@ -1,0 +1,83 @@
+@import '../cartegraph/variables.less';
+@import '../cartegraph/mixins.less';
+@import '../cartegraph/fonts.less';
+
+@import '../../css/campus-css/Styles.css';
+//@import '../../css/campus-css/TextEffects.css';
+@import '../../css/campus-css/topic.css';
+@import '../../../help/oms/Content/Resources/Stylesheets/cartegraph645.css';
+@import '../../css/campus-css/Borders.css';
+@import '../../css/campus-css/NoBorders.css';
+@import '../../css/campus-css/NoBordersIndent.css';
+@import '../../css/campus-css/OMS.css';
+@import '../../css/campus-css/editor.css';
+
+#expressionengine_template_debug {
+  margin-left:22% !important;
+}
+.new-entry {
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  line-height:25px;
+  height:25px;
+  width:80%;
+  top:15px;
+  display: block;
+  padding:5px 0;
+  margin:0 auto;
+  text-decoration: none;
+  color: white;
+  background-color: #f78e1e;
+}
+
+#clearSearch {
+	font-family: 'cg_icons';
+	font-style: normal;
+	font-size: 14px;
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	color: rgba(0,0,0,.25);
+	cursor: pointer;
+	.opacity(0);
+	&:hover {
+		color: rgba(0,0,0,.50);
+	}
+	&.show {
+		.opacity(100);
+	}
+}
+
+.entry:not(.single) {
+	cursor: pointer;
+}
+
+.entry.single {
+	padding-bottom: 40px;
+}
+
+
+.nextPrev {
+	display: inline-block;
+	background-color: rgba(0,0,0,.10);
+	color: rgba(0,0,0,.5);
+	font-size:14px;
+	line-height: 30px;
+	padding: 0 15px;
+	text-decoration: none;
+	position: absolute;
+	bottom: 38px;
+	.transition(all .2s ease);
+
+	&:hover {
+		background-color: rgba(0,0,0,.50);
+		color: #fff;
+	}
+}
+.previous { left: 0; }
+.next { right: 0; }
+
+ .paginate {
+ 	visibility: hidden;
+ }
